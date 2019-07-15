@@ -3,12 +3,11 @@ import os
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 
-
 app = Flask(__name__)
 
-app.config["MONGO_DBNAME"] = "task_manager"
 
-app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
+app.config["MONGO_DBNAME"] = 'task-manager'
+app.config["MONGO_URI"] = 'mongodb+srv://root:car4eih@myfirstcluster-kuy4g.mongodb.net/task-manager?retryWrites=true&w=majority'
 
 mongo = PyMongo(app)
 

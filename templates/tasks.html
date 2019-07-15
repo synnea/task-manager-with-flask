@@ -1,21 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width={%}, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    {% for task in tasks %}
+    </head>
+    <body>
 
-        {{task.task_name}}
-        {{task.category_name}}
-        {{task.task_description}}
-        {{task.is_urgent}}
-        {{task.due_date}}
-
-    {% endfor %}
-</body>
+        Hello 
+        {% for task in tasks %}
+            {{task.task_name}}
+            {{task.category_name}}
+            {{task.task_description}}
+            {{task.is_urgent}}
+            {{task.due_date}}
+        {% endfor %}
+    </body>
 </html>
